@@ -1,5 +1,6 @@
 <?php
     // EXO 1
+        echo "<h2>EXO 1</h2>";
         $age = 20;
         if($age >= 18)
             echo "<p>Bienvenue sur notre site.</p>";
@@ -7,6 +8,7 @@
             echo "<p>Vous n'êtes pas autorisé.</p>";
 
     // EXO 2
+        echo "<h2>EXO 2</h2>";
         $nombre = 4;
         if($nombre % 2 === 0){
             echo "<p>Le nombre est pair.</p>";
@@ -17,6 +19,7 @@
         echo $nombre % 2 === 0 ? "<p>Le nombre est pair.</p>" : "<p>Le nombre est impair</p>";
 
     // EXO 3
+        echo "<h2>EXO 3</h2>";
         $age = 25;
         $salaire = 60000;
         if($age<=30 && $salaire>=50000){
@@ -27,6 +30,7 @@
 
 
     // EXO 4
+        echo "<h2>EXO 4</h2>";
         $age = 20;
         switch($age){
             case 12:
