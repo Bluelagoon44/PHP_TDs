@@ -67,3 +67,8 @@ function prime($number){
     }
     return true;
 }
+
+// TD5 Bonus - TTC
+function calculTTC($ht, $tva){
+    return $ht + ($ht*$tva)/100;
+}
