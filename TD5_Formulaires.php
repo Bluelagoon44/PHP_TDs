@@ -22,7 +22,7 @@
         <title>Document</title>
         <style>
             body{
-                background-color : #<?= $color ?>;
+                background-color : <?= "#$color" ?>;
             }
         </style>
     </head>
