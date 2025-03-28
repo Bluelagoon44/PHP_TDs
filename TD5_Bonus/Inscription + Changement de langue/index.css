@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(174, 231, 239);
+    
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -11,6 +11,16 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+
+.light{
+    background-color:rgb(174, 231, 239);
+    color:black;
+}
+
+.dark{
+    background-color:rgb(2, 34, 39);
+    color:white;
 }
 
 header{
@@ -37,7 +47,7 @@ main{
     margin:auto;
 }
 
-form{
+form:not(#fr){
     display:flex;
     flex-direction:column;
     max-width:800px;
@@ -62,6 +72,33 @@ form{
         padding:.5rem;
         border-radius:10px;
         width:100%;
+    }
+}
+
+form#fr button{
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+
+    &:hover{
+        transform:scale(1.05);
+    }
+}
+
+#en:hover img{
+    transform:scale(1.05);
+}
+#theme{
+    background-color:rgb(10, 64, 70);
+    padding:.5rem;
+    display:flex;
+    gap:1rem;
+    border-radius:10px;
+
+    img{
+        width:30px;
+        height:30px;
+        filter:invert();
     }
 }
 

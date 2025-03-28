@@ -1,4 +1,6 @@
 <?php
+    require("cookieManager.php");
+
     $error = "";
     if(isset($_POST["lastName"])){
         if(!empty($_POST["lastName"]) && !empty($_POST["firstName"]) && !empty($_POST["email"]) && !empty($_POST["password"])){
@@ -23,7 +25,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="index.css" />
     </head>
-    <body>
+    <body class="<?= $_COOKIE["theme"] ?>">
         <?php require("header.php") ?>
         <main>
             <form method="POST" enctype="multipart/form-data">

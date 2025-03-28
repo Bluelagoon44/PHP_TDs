@@ -1,3 +1,5 @@
+<?php require("cookieManager.php") ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +8,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="index.css" />
     </head>
-    <body>
+    <body class="<?= $_COOKIE["theme"] ?>">
         <?php require("header.php") ?>
         <main>
             <p>
