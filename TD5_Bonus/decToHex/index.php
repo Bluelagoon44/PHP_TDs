@@ -15,6 +15,14 @@
         }
         else $error = "<p>Veuillez rentrer des nombres</p>";
     }
+    $redHex = dechex($red);
+    $greenHex = dechex($green);
+    $blueHex = dechex($blue);
+    $hexa = "";
+
+    foreach([$redHex, $greenHex, $blueHex] as $color){
+        $hexa .= $color; 
+    }
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +44,7 @@
             <input type="number" name="blue" placeholder="Bleu" />
             <button>Valider</button>
         </form>
+        <?= "#$hexa"; ?>
         <?= $error ? $error : "" ?>
     </body>
 </html>

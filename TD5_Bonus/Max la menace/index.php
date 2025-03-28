@@ -22,7 +22,7 @@
     <?php 
         if(isset($_POST["nb1"])){
             if(is_numeric($_POST["nb1"]) && is_numeric($_POST["nb2"]) && is_numeric($_POST["nb3"]) && is_numeric($_POST["nb4"]) && is_numeric($_POST["nb5"]))
-                echo maxValue([$_POST["nb1"], $_POST["nb2"], $_POST["nb3"], $_POST["nb4"], $_POST["nb5"]]);
+                echo maxValue([intval($_POST["nb1"]), intval($_POST["nb2"]), intval($_POST["nb3"]), intval($_POST["nb4"]), intval($_POST["nb5"])]);
             else 
                 echo "<p>On a dit que des chiffres !</p>";
         }
