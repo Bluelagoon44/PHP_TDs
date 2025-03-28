@@ -1,0 +1,12 @@
+#conversation{
+    display:flex;
+    flex-direction:column;
+
+    .user1{
+        align-self:flex-start;
+    }
+    
+    .user2{
+        align-self:flex-end;
+    }
+}
