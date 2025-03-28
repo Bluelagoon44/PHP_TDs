@@ -1,3 +1,13 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["lang"])){
+        $_SESSION["lang"] = "fr";
+    }
+    if(isset($_GET["lang"])){
+        $_SESSION["lang"] = htmlspecialchars($_GET["lang"]);
+    }
+?>
+
 <header>
     <nav>
         <ul>

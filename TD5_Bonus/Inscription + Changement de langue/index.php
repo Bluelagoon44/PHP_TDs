@@ -1,6 +1,4 @@
 <?php
-    session_start();
-
     $error = "";
     if(isset($_POST["lastName"])){
         if(!empty($_POST["lastName"]) && !empty($_POST["firstName"]) && !empty($_POST["email"]) && !empty($_POST["password"])){

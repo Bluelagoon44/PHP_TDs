@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,7 +10,7 @@
         <?php require("header.php") ?>
         <main>
             <p>
-                <?php if(isset($_GET["lang"]) && $_GET["lang"] === "en") : ?>
+                <?php if($_SESSION["lang"] === "en") : ?>
                     Welcome
                 <?php else : ?>
                     Bienvenue
